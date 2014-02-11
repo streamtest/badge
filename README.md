@@ -6,7 +6,7 @@ A javascript library for sniffing video URLs on the page it's loaded on
 Adding it to your page:
 
     <head>
-        <script type="text/javascript" src="http://badges.streamtest.com/scripts/StreamTest.js">
+        <script type="text/javascript" src="http://badges.streamtest.com/scripts/streamtest.js">
         </script>
     </head>
 
