@@ -1,4 +1,4 @@
-dge
+badge
 =====
 
 A javascript library for sniffing video URLs on the page it's loaded on
