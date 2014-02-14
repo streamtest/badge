@@ -23,7 +23,7 @@ function getStreamTestVideoList() {
     return "<div id='StreamTestVideoList'  >" +
         "<a id='StreamTestClose'>x</a>" +
         "<div id='STVLHeader'>" +
-        "<img class=\"STVL_logo\" src=\"http://www.streamtest.net/images/logo.png\" /><br/>" +
+        "<img class=\"STVL_logo\" src=\"//www.streamtest.net/images/logo.png\" /><br/>" +
         "<div id='STVLhd'><span>We have detected the following streams on this page, which one would you like to test?</span><br/>" +
         "</div>" +
         "</div>" + '<p id="presetStreamUrlsMsg">' + window.location.host + ' is offering the following streams for testing: </p>' +
@@ -35,9 +35,9 @@ function getStreamTestVideoList() {
 
 
 
-include("http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "js");
+include("//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "js");
 
-include("http://www.streamtest.com/Content/streamtestcss.css", "css");
+include("//www.streamtest.net/Content/streamtestcss.css", "css");
 
 var checker = 0;
 
@@ -148,7 +148,7 @@ function jqueryLoaded() {
                 //    //split function drop it from the resulting string
                 //    linkfound = protocol_ + parseStringEnd(urlarray[i]);
                 linkfound = StreamTestURLS[i];
-                q += "<a class='STLVhl' href=http://www.streamtest.net/?stream_url=" + linkfound + ">" + linkfound + "</a>";
+                q += "<a class='STLVhl' href=//www.streamtest.net/?stream_url=" + linkfound + ">" + linkfound + "</a>";
                 //}
             }
         }
@@ -160,7 +160,7 @@ function jqueryLoaded() {
                 //    //split function drop it from the resulting string
                 //    linkfound = protocol_ + parseStringEnd(urlarray[i]);
                 linkfound = urlarray[i];
-                q += "<a class='STLVhl' href=http://www.streamtest.net/?stream_url=" + linkfound + ">" + linkfound + "</a>";
+                q += "<a class='STLVhl' href=//www.streamtest.net/?stream_url=" + linkfound + ">" + linkfound + "</a>";
                 //}
             }
         }
@@ -193,7 +193,7 @@ function jqueryLoaded() {
             }
         });
 
-        $('a[href^="http://www.StreamTest.net/badges"], a[href^="http://www.streamtest.net/badges"]').click(function (e) {
+        $('a[href^="//www.StreamTest.net/badges"], a[href^="//www.streamtest.net/badges"]').click(function (e) {
             //$('StreamTestVideoList').bPopup();
             //centering with css
             centerPopup();
