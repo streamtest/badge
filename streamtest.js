@@ -58,7 +58,7 @@ function jqueryLoaded() {
                 });
                 $("#StreamTestBackground").fadeIn("slow");
                 $("#StreamTestVideoList").fadeIn("slow");
-                if (typeof StreamTestURLS !== 'undefined') {
+                if (typeof StreamTestURLS !== 'undefined' || window.location.host == "player.netromedia.com") {
                     $("#presetStreamUrlsMsg").show();
                     $("#STVLBody").css('height', '56%');
                 }
@@ -152,6 +152,9 @@ function jqueryLoaded() {
                 //}
             }
         }
+        else if (window.location.host == "player.netromedia.com" && typeof MediaLink !== 'undefined') {
+            q += "<a class='STLVhl' href=http://www.streamtest.net/?stream_url=" + MediaLink + "/" + MediaPath + ">" + linkfound + "</a>";
+        }
         else {
             for (var i = 1; i < urlarray.length; i++) {
 
@@ -171,7 +174,7 @@ function jqueryLoaded() {
         } else { // add it
             $(document.body).append(getStreamTestVideoList());
         }
-        
+
         $("#STVLBody").html(q);
 
         $('a.STLVhl').each(function () {
