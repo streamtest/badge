@@ -35,7 +35,7 @@ function getStreamTestVideoList() {
 
 
 
-include("//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "js");
+if (!window.jQuery) { include("//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js", "js") }
 
 include("//www.streamtest.net/Content/streamtestcss.css", "css");
 
