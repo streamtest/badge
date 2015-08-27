@@ -153,7 +153,7 @@ function jqueryLoaded() {
             }
         }
         else if (window.location.host == "player.netromedia.com" && typeof MediaLink !== 'undefined') {
-            q += "<a class='STLVhl' href=http://www.streamtest.net/?stream_url=" + MediaLink + "/" + MediaPath + ">" + linkfound + "</a>";
+            q += "<a class='STLVhl' href=https://www.streamtest.net/?stream_url=" + MediaLink + "/" + MediaPath + ">" + linkfound + "</a>";
         }
         else {
             for (var i = 1; i < urlarray.length; i++) {
